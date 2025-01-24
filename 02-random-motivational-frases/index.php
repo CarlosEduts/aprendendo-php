@@ -1,5 +1,6 @@
 <?php
 
+// Consultar a api e mostra ao usuário a frase motivacional e o nome do autor
 // Requisitando dados e transformando em json
 $apiURL = "https://zenquotes.io/api/random";
 $response = file_get_contents($apiURL);

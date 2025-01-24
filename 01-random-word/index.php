@@ -1,4 +1,6 @@
 <?php
+
+// Mostrar oa usuário uma palavra aleatória em inglês
 $apiUrl = "https://random-word-api.herokuapp.com/word";
 
 // Fazendo a requisição GET & Convertendo a resposta JSON para array PHP

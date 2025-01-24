@@ -1,4 +1,6 @@
 <?php
+
+// O codigo abaixo mostra de maneira formatada a data que a página foi criada
 // Define o fuso horário
 date_default_timezone_set('America/Bahia');
 $pageCreatedOn = strtotime("2025-01-22 11:42:10");
