@@ -24,6 +24,9 @@ Aqui estão os exercícios que estou desenvolvendo para aprimorar meus conhecime
 - **06-greeting**:  
    Saúda o usuário de acordo com o horário do dia.
 
+- **07-alert-message**:  
+   Utilizando uma classe PHP para gerar uma mensagem de alerta.
+
 ---
 
 Espero que esses exercícios ajudem outros desenvolvedores que também estão começando a aprender PHP. Sinta-se à vontade para explorar ou sugerir melhorias!
