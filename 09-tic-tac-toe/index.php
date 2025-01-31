@@ -1,8 +1,6 @@
 <?php
 session_start(); // Inicia a sessão
 
-$message = "";
-
 function startData()
 {
     $_SESSION["board"] = [
@@ -12,6 +10,7 @@ function startData()
     ];
     $_SESSION['turn'] = "x";
     $_SESSION['number_of_games'] = 0;
+    $_SESSION['message'] = "";
 }
 
 // Inicializa o tabuleiro e turno na sessão, se ainda não estiverem definidos
@@ -36,10 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         startData();
     }
 
-
-
     // Verifica se a célula está vazia antes de marcar
-    if ($_SESSION['board'][$x][$y] == "") {
+    if ($_SESSION['board'][$x][$y] == "" && empty($_SESSION['message'])) {
         $_SESSION['board'][$x][$y] = $_SESSION['turn'];
         $_SESSION['number_of_games'] = $_SESSION['number_of_games'] + 1;
 
@@ -48,24 +45,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // # # #    x x x   # # #   x # #   # x #    # # x   # x #   # x #
         // # # #    # # #   x x x   x # #   # x #    # # x   x # #   # # x
 
-        if (verify(0, 0) && verify(1, 0) && verify(2, 0)) {
-            $message = $_SESSION['turn'];
-        } elseif (verify(0, 1) && verify(1, 1) && verify(2, 1)) {
-            $message = $_SESSION['turn'];
-        } elseif (verify(0, 2) && verify(1, 2) && verify(2, 2)) {
-            $message = $_SESSION['turn'];
-        } else if (verify(0, 0) && verify(0, 1) && verify(0, 2)) {
-            $message = $_SESSION['turn'];
-        } elseif (verify(1, 0) && verify(1, 1) && verify(1, 2)) {
-            $message = $_SESSION['turn'];
-        } elseif (verify(2, 0) && verify(2, 1) && verify(2, 2)) {
-            $message = $_SESSION['turn'];
-        } else if (verify(2, 0) && verify(1, 1) && verify(0, 2)) {
-            $message = $_SESSION['turn'];
-        } elseif (verify(0, 0) && verify(1, 1) && verify(2, 2)) {
-            $message = $_SESSION['turn'];
+        // Verificar quem ganhou
+        if (
+            // Verifica linhas
+            verify(0, 0) && verify(1, 0) && verify(2, 0) ||
+            verify(0, 1) && verify(1, 1) && verify(2, 1) ||
+            verify(0, 2) && verify(1, 2) && verify(2, 2) ||
+
+            // Verifica colunas
+            verify(0, 0) && verify(0, 1) && verify(0, 2) ||
+            verify(1, 0) && verify(1, 1) && verify(1, 2) ||
+            verify(2, 0) && verify(2, 1) && verify(2, 2) ||
+
+            // Verifica diagonais
+            verify(2, 0) && verify(1, 1) && verify(0, 2) ||
+            verify(0, 0) && verify(1, 1) && verify(2, 2)
+        ) {
+            $_SESSION['message'] = $_SESSION['turn']; // Mostar Ganhador
         } elseif ($_SESSION['number_of_games'] >= 9) {
-            $message = "Empate!";
+            $_SESSION['message'] = "Empate!";
         }
 
         // Alterna o turno
@@ -105,7 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             margin-bottom: 20px;
         }
 
-        .title > h2 {
+        .title>h2 {
             font-size: 2rem;
             padding: 1rem;
         }
@@ -114,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
-            background-color:rgba(51, 51, 51, 0.22);
+            background-color: rgba(51, 51, 51, 0.22);
             padding: 10px;
             border-radius: 10px;
         }
@@ -169,10 +167,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </div>
 
     <div class="winner-data">
-        <h1><?= $message ? $message : "" ?></h1>
-        <h3><?= $message ? "Ganhou!" : "" ?></h3>
+        <h1><?= $_SESSION['message'] ? $_SESSION['message'] : "" ?></h1>
+        <h3><?= $_SESSION['message'] ? "Ganhou!" : "" ?></h3>
         <form method="POST">
-            <?= $message ? '<button class="restart-btn" type="submit" name="restart" value="restart">Reiniciar</button>' : "" ?>
+            <?= $_SESSION['message'] ?
+                '<button class="restart-btn" type="submit" name="restart" value="restart">Reiniciar</button>' : ""
+            ?>
         </form>
     </div>
 </body>
