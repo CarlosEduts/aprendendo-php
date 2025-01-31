@@ -30,6 +30,9 @@ Aqui estão os exercícios que estou desenvolvendo para aprimorar meus conhecime
 - **08-multiplication-table**:  
    Cria uma tabuada a partir dos dados inserido pelo usuário (número, tipo de cálculo).
 
+- **09-tic-tac-toe**:  
+   O famoso jogo da velha feito em PHP.
+
 ---
 
 Espero que esses exercícios ajudem outros desenvolvedores que também estão começando a aprender PHP. Sinta-se à vontade para explorar ou sugerir melhorias!
