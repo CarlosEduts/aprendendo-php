@@ -1,0 +1,23 @@
+<div class="card">
+  <p>{{title}}</p>
+  <p>{{subtitle}}</p>
+
+  <form method="POST" class="card-actions">
+    <input type="hidden" name="id" value="{{id}}" />
+    <input type="hidden" name="type" value="{{type}}" />
+
+    <button type="submit" name="action" value="delete">
+      <span class="material-symbols-outlined"> delete </span>
+    </button>
+
+    {% if type != 'pending' %}
+    <button type="submit" name="action" value="to-left">
+      <span class="material-symbols-outlined"> chevron_left </span>
+    </button>
+    {% endif %} {% if type != 'conclude' %}
+    <button type="submit" name="action" value="to-right">
+      <span class="material-symbols-outlined"> chevron_right </span>
+    </button>
+    {% endif %}
+  </form>
+</div>

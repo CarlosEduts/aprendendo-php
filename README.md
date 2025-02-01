@@ -33,6 +33,9 @@ Aqui estão os exercícios que estou desenvolvendo para aprimorar meus conhecime
 - **09-tic-tac-toe**:  
    O famoso jogo da velha feito em PHP.
 
+- **10-twig-cards-organize**:   
+   Organizador de tarefas com quadros para pendentes, em progresso e concluídos, que utiliza cookies para armazenar os dados.
+
 ---
 
 Espero que esses exercícios ajudem outros desenvolvedores que também estão começando a aprender PHP. Sinta-se à vontade para explorar ou sugerir melhorias!

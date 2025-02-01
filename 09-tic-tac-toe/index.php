@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $x = $_POST["cellX"];
     $y = $_POST["cellY"];
 
-    if ($_POST["restart"]) {
+    if ($_POST['action'] = 'delete') {
         startData();
     }
 
