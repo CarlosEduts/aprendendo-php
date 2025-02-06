@@ -36,6 +36,9 @@ Aqui estão os exercícios que estou desenvolvendo para aprimorar meus conhecime
 - **10-twig-cards-organize**:   
    Organizador de tarefas com quadros para pendentes, em progresso e concluídos, que utiliza cookies para armazenar os dados.
 
+- **11-sqlite-connection**:
+   Um simples criador de posts para testar a conexão com banco de dados SQLite.
+
 ---
 
 Espero que esses exercícios ajudem outros desenvolvedores que também estão começando a aprender PHP. Sinta-se à vontade para explorar ou sugerir melhorias!
