@@ -33,11 +33,15 @@ Aqui estão os exercícios que estou desenvolvendo para aprimorar meus conhecime
 - **09-tic-tac-toe**:  
    O famoso jogo da velha feito em PHP.
 
-- **10-twig-cards-organize**:   
+- **10-twig-cards-organize**:  
    Organizador de tarefas com quadros para pendentes, em progresso e concluídos, que utiliza cookies para armazenar os dados.
 
+   <img style="width:100%; max-width: 400px;" src="./assets/10-twig-cards-organize.png" />
+
 - **11-sqlite-connection**:
-   Um simples criador de posts para testar a conexão com banco de dados SQLite.
+  Um simples criador de posts para testar a conexão com banco de dados SQLite.
+
+   <img style="width:100%; max-width: 400px;" src="./assets/11-sqlite-connection.png" />
 
 ---
 
