@@ -43,6 +43,9 @@ Aqui estão os exercícios que estou desenvolvendo para aprimorar meus conhecime
 
    <img style="width:100%; max-width: 400px;" src="./assets/11-sqlite-connection.png" />
 
+- **12-water-tracker**:
+   Ainda em desenvolvimento, tela de login já feita
+
 ---
 
 Espero que esses exercícios ajudem outros desenvolvedores que também estão começando a aprender PHP. Sinta-se à vontade para explorar ou sugerir melhorias!
