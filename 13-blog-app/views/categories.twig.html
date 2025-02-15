@@ -1,0 +1,17 @@
+<div class="ml-2">
+  {% set categorias_exibidas = [] %}
+  
+  {% for category_item in categories %} 
+  {% if category_item.category not in categorias_exibidas %}
+  {% set categorias_exibidas = categorias_exibidas | merge([category_item.category]) %}
+
+  <a
+    href="/categorie/{{category_item.category}}"
+    class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300"
+  >
+    {{ category_item.category }}
+  </a>
+
+  {% endif %}
+  {% endfor %}
+</div>

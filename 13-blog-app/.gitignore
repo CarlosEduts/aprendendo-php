@@ -1,0 +1,4 @@
+vendor/
+
+# Ignorar banco de dados
+*.sqlite
