@@ -12,14 +12,6 @@ try {
         password TEXT NOT NULL
     )');
 
-    // Criando a tabela de registros
-    $pdo->exec('CREATE TABLE IF NOT EXISTS water (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        quantity INTEGER NOT NULL,
-        user_id INTEGER NOT NULL,
-        FOREIGN KEY (user_id) REFERENCES users(id)
-    )');
-
     echo "Base de dados criado com sucesso </br>";
 } catch (PDOException $e) {
     echo "Erro ao criar base de dados: " . $e->getMessage();

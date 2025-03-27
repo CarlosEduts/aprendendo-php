@@ -1,54 +1,48 @@
-# ✍️ Aprendendo PHP
+# 🧑‍💻 Aprendendo PHP
 
-Bem-vindo ao repositório **Aprendendo PHP**!  
-Aqui estão os exercícios que estou desenvolvendo para aprimorar meus conhecimentos na linguagem PHP.
+Este repositório contém anotações e projetos que desenvolvi ao longo da minha jornada de aprendizado em PHP.
 
-## 📂 Exercícios
+> ℹ️ O conteúdo está estruturado conforme minha aprendizagem, portanto, pode não seguir uma sequência linear da linguagem e não deve ser visto como um tutorial.
 
-- **01-random-word**:  
-   Mostra ao usuário uma palavra aleatória em inglês obtida de uma API.
+> ℹ️ Todo o conteúdo foi escrito com base no meu conhecimento atual, não posso garantir que estejam completamente corretos.
 
-- **02-random-motivational-frases**:  
-   Consulta uma API e exibe uma frase motivacional junto com o nome do autor.
+## Dias
 
-- **03-page-created-on**:  
-   Mostra de forma formatada a data em que a página foi criada.
+O conteúdo está organizado por dias, com anotações que considerei mais relevantes. Alguns dias foram omitidos, pois foram dedicados apenas à revisão ou à prática em projetos:
 
-- **04-date-now**:  
-   Formata e exibe a data atual no seguinte formato:  
-   _Exemplo: Sexta-feira, 24 de Janeiro de 2025_.
+- [Dia 01](./days/01.md)
+- [Dia 02](./days/02.md)
+- [Dia 03](./days/03.md)
+- [Dia 04](./days/04.md)
+- [Dia 05](./days/05.md)
+- [Dia 06](./days/06.md)
+- [Dia 07](./days/07.md)
+- [Dia 08](./days/08.md)
+- [Dias 14 e 15](./days/14e15.md)
+- [Dia 20](./days/20.md)
+- [Dias 21 e 22](./days/21e22.md)
+- [Dia 23](./days/23.md)
+- [Dia 24](./days/24.md)
+- [Dias 25 e 26](./days/25e26.md)
+- [Dia 27](./days/27.md)
+- [Dia 28](./days/28.md)
+- [Dia 36](./days/36.md)
+- [Dia 37](./days/37.md)
+- [Dia 40](./days/40.md)
 
-- **05-password-generator**:  
-   Gera uma senha aleatória com base nas escolhas do usuário, como tamanho, inclusão de letras maiúsculas, números e símbolos.
+## Projetos
 
-- **06-greeting**:  
-   Saúda o usuário de acordo com o horário do dia.
+Além das anotações, aqui estão alguns dos projetos que desenvolvi:
 
-- **07-alert-message**:  
-   Utilizando uma classe PHP para gerar uma mensagem de alerta.
+- [Projetos Simples - README](./projects/README.md)
+- [md-posts](https://github.com/CarlosEduts/md-posts)
+- [point-racer-multiplayer](https://github.com/CarlosEduts/point-racer-multiplayer)
 
-- **08-multiplication-table**:  
-   Cria uma tabuada a partir dos dados inserido pelo usuário (número, tipo de cálculo).
+## Links Úteis
 
-- **09-tic-tac-toe**:  
-   O famoso jogo da velha feito em PHP.
+Recursos que foram fundamentais no meu aprendizado e podem ajudar quem deseja se aprofundar em PHP:
 
-- **10-twig-cards-organize**:  
-   Organizador de tarefas com quadros para pendentes, em progresso e concluídos, que utiliza cookies para armazenar os dados.
-   ![10-twig-cards-organize](./assets/10-twig-cards-organize.png)
-
-- **11-sqlite-connection**:
-  Um simples criador de posts para testar a conexão com banco de dados SQLite.
-  ![11-sqlite-connection](./assets/11-sqlite-connection.png)
-   
-
-- **12-water-tracker**:
-   Ainda em desenvolvimento, tela de login já feita
-
-- **13-blog-app**:
-   Ainda em desenvolvimento, Um simples app de blog, com postágens feita pelos usuários, método de login ainda nõa implementado
-   ![13-blog-app](./assets/13-blog-app.png)
-
----
-
-Espero que esses exercícios ajudem outros desenvolvedores que também estão começando a aprender PHP. Sinta-se à vontade para explorar ou sugerir melhorias!
+- [Learn PHP For Free: A Beginner's Guide | Codeguage](https://www.codeguage.com/courses/php)
+- [Curso de PHP 8 do Zero ao Profissional - YouTube](https://www.youtube.com/playlist?list=PL0N5TAOhX5E9eJ9Ix6YUIgEw3lNmaIEE9)
+- [Começa aqui seu curso de PHP Moderno - @CursoemVideo](https://www.youtube.com/playlist?list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_)
+- [PROJETOS COMPLETOS - PHP - YouTube](https://www.youtube.com/playlist?list=PLXik_5Br-zO_d-XHe8bZAWN9-nBGhIAyx)
